@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/navigation.js"></script>
+    <link rel="stylesheet" href="css/management-team.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    
+
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="event-heading">
+        <h2><b>Management Team</b></h2>
+       
+      </div>
+      <br>
+      <div id="table-row">
+             <div class="container">
+        <div class="row">
+  
+               <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4> Gaurav Kumar</h4>
+                <p style="font-size: 20px">Admin </p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>Gaurav</h4>
+                <p style="font-size: 20px">Admin </p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>Flopy</h4>
+                <p style="font-size: 20px">User</p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>Shivam</h4>
+                <p style="font-size: 20px">Member</p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>Subhash</h4>
+                <p style="font-size: 20px">User</p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>User </h4>
+                <p style="font-size: 20px">User</p>
+                <!-- <p style="font-size: 20px"></p> -->
+              </div>
+            </div>
+          </div>
+                  <div class="column">
+            <div class="card">
+              <img src="webimg/Persion.jpg" class="center" style="height: 100px; width: 100px;">
+              <div class="contain-card">
+                <h4>kabita</h4>
+                <p style="font-size: 20px">admin</p>
+                <!-- <p style="font-size: 20px">9424488880</p> -->
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Fetch header content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Fetch footer content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
