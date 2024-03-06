@@ -1,20 +1,4 @@
-function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    document.getElementById("open-btn").style.display = "none";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-100%";
-    document.getElementById("open-btn").style.display = "block";
-}
-
-function opensearch() {
-    document.getElementById("search_div").style.top = "0";
-}
-
-function closesearch() {
-    document.getElementById("search_div").style.top = "-100%";
-}
 $(document).ready(function() {
     $("#testimonial-slider").owlCarousel({
       items: 2,
@@ -72,7 +56,23 @@ $(".slide img").on("click" , function(){
 // 	$(".overlay").hide();
 // })
 
-   
+function openNav() {
+  document.getElementById("mySidenav").style.left = "0";
+  document.getElementById("open-btn").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.left = "-100%";
+  document.getElementById("open-btn").style.display = "block";
+}
+
+function opensearch() {
+  document.getElementById("search_div").style.top = "0";
+}
+
+function closesearch() {
+  document.getElementById("search_div").style.top = "-100%";
+}
 
 
 

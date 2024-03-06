@@ -47,7 +47,45 @@
       <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
     </div>
     <div class="nav_heading">
-      <h3>सम्पूर्ण मिथिला फाउंडेशन </h3>
+      <h3>सम्पूर्ण मिथिला फाउंडेशन</h3>
+    <style>
+      .nav_heading h3 {
+        position: relative; /* Needed for absolute positioning of the pseudo-element */
+        padding: 10px 0; /* Adds padding on top and bottom */
+      }
+
+      .nav_heading h3::after {
+        content: "";
+        position: absolute;
+        right: 0; /* Adjust this value to move the image closer or further from the right edge */
+        top: 50%; /* Centers the image vertically */
+        transform: translateY(-50%); /* Adjusts the positioning to truly center based on image height */
+        background: url('webimg/ashok\ stambh.png') no-repeat;
+        background-size: 26px; /* Adjust based on your preference */
+        width: 47px; /* Match the background-size or adjust as needed */
+        height: 47px; /* Match the background-size or adjust as needed */
+        margin-right: -54px; /* Adjust the space between the text and the image */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .nav_heading h3::after {
+          width: 47px; /* Smaller size for mobile */
+          height: 47px; /* Smaller size for mobile */
+          background-size: 26px; /* Adjust based on your preference */
+          margin-right: -58px; /* Less space on smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav_heading h3::after {
+          width: 47px; /* Smaller size for mobile */
+          height: 47px; /* Smaller size for mobile */
+          background-size: 26px; /* Adjust based on your preference */
+          margin-right: 5px;  /* Optionally hide the image on very small screens */
+        }
+      }
+    </style>
     </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" id="close-btn" class="closebtn menu" onclick="closeNav()"><i class="fa fa-times"
